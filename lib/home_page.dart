@@ -358,13 +358,14 @@ class _HomePageState extends State<HomePage> {
               margin: const EdgeInsets.symmetric(horizontal: 5),
               height: 80,
               width: 80,
+              alignment: Alignment.center,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(40),
                 color: (_selectedIcon == index)
                     ? Theme.of(context).primaryColorLight 
                     : const Color(0xFF5C5C5C),
               ),
-              child: Icon(
+              child: FaIcon(
                 listIcon[index],
                 color: (_selectedIcon == index)
                     ? Theme.of(context).primaryColor
